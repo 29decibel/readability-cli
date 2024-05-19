@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "jsdom": "^24.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/jsdom": "^21.1.6",
+    "esbuild": "0.21.3"
+  },
+  "name": "readability-cli",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build index.js --target bun --outdir ./out",
+    "test-run": "bun out/index.js \"https://bun.sh/guides/process/argv\""
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
