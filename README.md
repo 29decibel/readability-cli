@@ -1,5 +1,7 @@
 # readability-cli
 
+This is to use `bun` and [mozilla/readability](https://github.com/mozilla/readability) to build a Node-free cli.
+
 To install dependencies:
 
 ```bash
@@ -16,4 +18,10 @@ Test run
 
 ```bash
 bun run test-run
+```
+
+Get readability article JSON string
+
+```bash
+bun out/index.js https://github.com/mozilla/readability
 ```
