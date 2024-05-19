@@ -25,3 +25,15 @@ Get readability article JSON string
 ```bash
 bun out/index.js https://github.com/mozilla/readability
 ```
+
+Build cli binary
+
+```bash
+bun run build:cli
+```
+
+Using binary:
+
+```bash
+./readability-cli https://bun.sh/docs/bundler/executables
+```
