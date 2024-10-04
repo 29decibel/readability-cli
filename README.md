@@ -45,5 +45,5 @@ bun run build:cli
 Using binary:
 
 ```bash
-./readability-cli https://bun.sh/docs/bundler/executables
+./dist/readability-cli https://bun.sh/docs/bundler/executables
 ```
