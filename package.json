@@ -13,7 +13,8 @@
   "type": "module",
   "scripts": {
     "build": "bun build index.ts --target bun --outdir ./out",
-    "build:cli": "bun build index.ts --target=bun-linux-x64 --compile --outfile dist/readability-cli",
+    "build:cli:linux": "bun build index.ts --target=bun-linux-x64 --compile --outfile dist/readability-cli-linux-x64",
+    "build:cli:mac": "bun build index.ts --target=bun-darwin-arm64 --compile --outfile dist/readability-cli-darwin-arm64",
     "test-run": "bun out/index.js \"https://bun.sh/guides/process/argv\""
   },
   "peerDependencies": {
